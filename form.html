@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnWithMCS - Admission Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Poppins:wght@600;700&family=Rubik:wght@400;500&display=swap"
+    rel="stylesheet" >
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <nav class="nav-back">
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i>Go Back</a>
+    </nav>
+    <header class="header">
+        <h1 class="Fill"><h1 style="color:#007bff">LearnWithMCS</h1> Fill the Admission Form, We will contact you soon and Assist You  without any Charges</h2></h1>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <form id="admissionForm" action="https://formspree.io/f/movayooa" method="POST">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="course">Course</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select Course</option>
+                        <option value="Web Development">ADCA</option>
+                        <option value="Data Analytics">DCA</option>
+                        <option value="Cyber Security">Web Development</option>
+                        <option value="Cyber Security">DIT</option>
+                        <option value="Cyber Security">ADIT</option>
+                        <option value="Cyber Security">AUTOCAD</option>
+                        <option value="Cyber Security">PYTHON</option>
+                        <option value="Cyber Security">ADFA</option>
+                        <option value="Cyber Security">DFA</option>
+                        <option value="Cyber Security">TALLY PRIME</option>
+                        <option value="Cyber Security">OTHER</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="documents">Upload Documents</label>
+                    <input type="file" id="documents" name="documents" accept="application/pdf,image/*" required>
+                </div>
+                <div class="form-group">
+                    <button  type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 MCS Institute. All rights reserved.</p>
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+</html>
